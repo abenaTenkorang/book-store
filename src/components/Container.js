@@ -1,17 +1,17 @@
 import React from 'react';
-import BookContent from './Book';
+import Content from './Book';
 import AddBook from './AddBook';
 
-const BookContainer = () => {
+const Container = () => {
   const books = [
     {
-      title: 'The watchtower',
+      title: 'The boy',
       author: 'abi',
       id: 1,
       category: 'Novel',
     },
     {
-      title: 'Awake',
+      title: 'Dear John',
       author: 'mimi',
       id: 2,
       category: 'Novel',
@@ -20,9 +20,9 @@ const BookContainer = () => {
 
   return (
     <div className="main-container">
-      <BookContent books={books} />
+      <Content books={books} />
       <AddBook />
     </div>
   );
 };
-export default BookContainer;
+export default Container;

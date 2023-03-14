@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Books from './Books';
 
-const BookContent = ({ books }) => (
-  <ul className="book-content">
+const Content = ({ books }) => (
+  <ul className="content">
     {
 books.map((book) => <Books key={book.id} book={book} />)
 }
   </ul>
 
 );
-BookContent.propTypes = {
+Content.propTypes = {
   books: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -21,4 +21,4 @@ BookContent.propTypes = {
   ).isRequired,
 };
 
-export default BookContent;
+export default Content;

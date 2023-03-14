@@ -14,7 +14,7 @@ const Books = (props) => {
 
   return (
     <>
-      <li key={id} className="books-content">
+      <li key={id} className="content">
         {title}
         {' by '}
         {author}
